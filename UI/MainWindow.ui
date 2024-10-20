@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>appMainWindow</class>
+ <widget class="QMainWindow" name="appMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1122</width>
+    <height>753</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1122</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen_File"/>
+    <addaction name="actionSave_File"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionDataLoader"/>
+   <addaction name="actionShaleCalcuation"/>
+   <addaction name="actionVisualization"/>
+  </widget>
+  <action name="actionDataLoader">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/images/fugue-icons-3.5.6/icons/database.png</normaloff>:/images/fugue-icons-3.5.6/icons/database.png</iconset>
+   </property>
+   <property name="text">
+    <string>DataLoader</string>
+   </property>
+   <property name="toolTip">
+    <string>'To Open DataLoading page'</string>
+   </property>
+  </action>
+  <action name="actionVisualization">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/images/fugue-icons-3.5.6/icons/spectrum-small.png</normaloff>:/images/fugue-icons-3.5.6/icons/spectrum-small.png</iconset>
+   </property>
+   <property name="text">
+    <string>Visualization</string>
+   </property>
+   <property name="toolTip">
+    <string>To Open the Visualization Page</string>
+   </property>
+  </action>
+  <action name="actionShaleCalcuation">
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/images/fugue-icons-3.5.6/icons/calculator-scientific.png</normaloff>:/images/fugue-icons-3.5.6/icons/calculator-scientific.png</iconset>
+   </property>
+   <property name="text">
+    <string>ShaleCalcuation</string>
+   </property>
+   <property name="toolTip">
+    <string>To Open the Shale Calculation page</string>
+   </property>
+  </action>
+  <action name="actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+  </action>
+  <action name="actionSave_File">
+   <property name="text">
+    <string>Save File </string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

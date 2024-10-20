@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="images">
+    <file>fugue-icons-3.5.6/icons/database.png</file>
+    <file>fugue-icons-3.5.6/icons/spectrum-small.png</file>
+    <file>fugue-icons-3.5.6/icons/calculator-scientific.png</file>
+  </qresource>
+</RCC>
